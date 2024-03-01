@@ -1,0 +1,36 @@
+.contact {
+    background-image: linear-gradient(180deg, rgba(29, 35, 60, 0.8), rgba(20, 20, 20, .8));
+    background-position: 50% 0;
+    background-size: auto repeat;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-areas: ". . . . ." ". Area Area Area .";
+}
+.standard-grid {
+    grid-template-columns: 8vw 1fr 8vw 1fr 8vw;
+    grid-template-rows: 8vw auto 8vw;
+}
+
+.contact-content {
+    display: grid;
+    grid-area: Area;
+    grid-template-columns: 1fr 8vw 1fr .5fr;
+    grid-template-areas: "Info . Form";
+}
+
+.form-block {
+    grid-area: Form;
+}
+.info {
+    grid-area: Info;
+}
+
+
+.footer {
+    grid-template-columns: repeat(8vw, 1fr);
+    grid-template-areas: '. . . . . . . .' '. Block . Block . Block .'
+}
+
+
